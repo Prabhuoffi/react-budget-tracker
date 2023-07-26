@@ -1,38 +1,147 @@
-.App {
+* {
+  background-color: white;
+}
+
+.h1 {
   text-align: center;
+  font-size: large;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.budget-container {
+  background-color: skyblue;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  width: 400px;
+  height: 45px;
+  float: left;
 }
 
-.App-link {
-  color: #61dafb;
+.budget-container.editing {
+  background-color: skyblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.view-budget-span {
+  background-color: beige;
+}
+
+.view-budget-button {
+  background-color: blue;
+  font-weight: 400;
+}
+
+.edit-button {
+  background-color: #dc3545;
+}
+
+.edit-budget-input {
+  margin-right: 0.75rem;
+  background-color: bisque;
+}
+
+.edit-budget-button {
+  background-color: blue;
+  font-weight: 400;
+}
+.budget-button{
+  background-color:pink;
+}
+
+.alert {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  width: 400px;
+  height: 45px;
+  float: left;
+  margin-left: 100px;
+}
+
+.alert-danger {
+  background-color: #dc3545;
+  color: black;
+}
+
+.alert-success {
+  background-color: lawngreen;
+  color: black;
+}
+
+.expensescontainer {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  width: 400px;
+  height: 45px;
+  float: right;
+  background-color: lightsalmon;
+}
+
+.form-control {
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.expense-form {
+  margin-bottom: 1rem;
+}
+
+.input-row {
+  display: flex;
+  margin-right: 1rem;
+}
+
+.input-group {
+  margin-right: 1rem;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  width: 100%;
+}
+
+.save-button {
+  background-color: #007bff;
+  margin-left: 12px;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.badge {
+  font-size: 1rem;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.badge-pill {
+  border-radius: 20px;
+}
+
+.TiDelete {
+  cursor: pointer;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.TiDelete:hover {
+  color: #0056b3;
 }
